@@ -1,0 +1,56 @@
+/* Globales */
+* {
+	box-sizing: border-box;
+}
+
+ul, ol {
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	list-style-type: none;
+}
+/* Container */
+.container {
+	width: 100vh;
+	margin: 0 auto;
+}
+.logo {
+	float:left;
+	margin-right: 30px;
+  color: #fff;
+}
+.main-nav {
+	background-color: rgb(6, 11, 40);
+	padding: 12px 15px;
+	overflow: hidden;
+  color: white;
+  font-weight:
+}
+.main-nav li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+}
+.menu {
+	float: left;
+	overflow: hidden;
+}
+.main-nav li {
+	float: left;
+	margin-right: 30px;
+	line-height: 39px;
+  border-top: 40px;
+}
+.main-nav li a:hover{
+	text-decoration: underline;
+}
+.access{
+	float: right;
+}
+.access li {
+	margin-right: 0;
+	margin-left: 15px;
+  margin-top: 15px;
+}
