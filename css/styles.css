@@ -11,9 +11,13 @@ ul, ol {
 li {
 	list-style-type: none;
 }
+.regi{
+	background-color: black;
+}
+
 /* Container */
 .container {
-	width: 100vh;
+	width: 1140px;
 	margin: 0 auto;
 }
 .logo {
@@ -26,7 +30,7 @@ li {
 	padding: 12px 15px;
 	overflow: hidden;
   color: white;
-  font-weight:
+
 }
 .main-nav li a {
 	text-decoration: none;
@@ -53,4 +57,59 @@ li {
 	margin-right: 0;
 	margin-left: 15px;
   margin-top: 15px;
+}
+/*header*/
+header{
+	width: 1140px;
+	margin-bottom: 20px;
+	z-index: 999;
+}
+
+/*Formularios*/
+
+.form-container {
+	max-width: 350px;
+	margin: 0 auto;
+}
+.form-container h1 {
+	text-align: center;
+	text-transform: uppercase;
+}
+.registro {
+	margin-bottom: 20px;
+}
+.access-form {
+	overflow: hidden;
+}
+.access-form label {
+	font-size: 16px;
+	margin-bottom: 5px;
+	display: inline-block;
+}
+.registro input {
+	width: 100%;
+  border: 1px solid #ccc;
+  padding: 8px 38px 8px 8px;
+}
+.remember-me {
+	text-align: right;
+}
+.remember-me input {
+	width: auto;
+}
+.alert-hide {
+	color: rgb(239, 76, 39);
+	font-size: 14px;
+	margin-top: 5px;
+}
+.access-form button {
+	font-size: 16px;
+  background-color: #3c8dbc;
+  border: 1px solid #3c8dbc;
+  color: #fff;
+  text-transform: capitalize;
+  width: 40%;
+  padding: 8px 14px;
+  border-radius: 10px;
+	cursor: pointer;
 }
