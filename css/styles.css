@@ -11,97 +11,176 @@ ul, ol {
 li {
 	list-style-type: none;
 }
-.regi{
-	background-color: black;
-}
 
-/* Container */
-.container {
-	width: 1140px;
+body{
 	margin: 0 auto;
 }
+
+.regi{
+	background-image: url(../img/wheat.png);
+	color: white;
+}
+
+body{
+	font-weight: bold;
+	color: white;
+}
+/* Container */
+.container {
+	width: 100%;
+	margin: 0 auto;
+}
+
 .logo {
 	float:left;
 	margin-right: 30px;
   color: #fff;
 }
+
 .main-nav {
 	background-color: rgb(6, 11, 40);
 	padding: 12px 15px;
 	overflow: hidden;
   color: white;
-
+	width: 100%;
 }
+
 .main-nav li a {
 	text-decoration: none;
 	text-transform: uppercase;
 	color: #fff;
 }
+
 .menu {
 	float: left;
 	overflow: hidden;
 }
+
 .main-nav li {
 	float: left;
 	margin-right: 30px;
 	line-height: 39px;
   border-top: 40px;
 }
+
 .main-nav li a:hover{
 	text-decoration: underline;
 }
+
 .access{
 	float: right;
 }
+
 .access li {
 	margin-right: 0;
 	margin-left: 15px;
   margin-top: 15px;
 }
+
 /*header*/
+
 header{
-	width: 1140px;
-	margin-bottom: 20px;
+	width: 100%;
+	margin-bottom:0px ;
 	z-index: 999;
 }
+
+.beerhour{
+	background-color: green;
+	background-repeat: no-repeat;
+
+}
+
+.beerhour{
+	width: 100%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.beerhour img{
+	width: 350px;
+	background-color: white;
+	border-radius: 50%;
+	border: solid 25px black;
+	flex-direction: column;
+}
+
+
+.text3{
+	/*background: url(../img/_DSC00377.jpg);*/
+	background-repeat: no-repeat;
+
+}
+.text3{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 0px;
+	position: relative;
+
+}
+.text3 h2{
+	position: absolute;
+	bottom: 150px;
+}
+
+.text3 h3{
+	position: absolute;
+	bottom: 0;
+}
+
+.text3 img{
+	width: 100%;
+}
+
 
 /*Formularios*/
 
 .form-container {
-	max-width: 350px;
+	max-width: 50vw;
 	margin: 0 auto;
 }
+
 .form-container h1 {
 	text-align: center;
 	text-transform: uppercase;
 }
+
 .registro {
 	margin-bottom: 20px;
 }
+
 .access-form {
 	overflow: hidden;
 }
+
 .access-form label {
 	font-size: 16px;
 	margin-bottom: 5px;
 	display: inline-block;
 }
+
 .registro input {
 	width: 100%;
   border: 1px solid #ccc;
   padding: 8px 38px 8px 8px;
 }
+
 .remember-me {
 	text-align: right;
 }
+
 .remember-me input {
 	width: auto;
 }
+
 .alert-hide {
 	color: rgb(239, 76, 39);
 	font-size: 14px;
 	margin-top: 5px;
 }
+
 .access-form button {
 	font-size: 16px;
   background-color: #3c8dbc;

@@ -13,19 +13,20 @@
     <h1>beer hour</h1>
     <h2>Don´t worry beer happy</h2>
     </div>
-    <div class="text1">
+    <div class="text3">
+          <img src="img/_DSC00377.jpg" alt="foto1r">
       <h2>¿Buscas variedad?</h2>
-      <h2>¡Encuentra a los Brewers que se ajusten a tus gustos!</h2>
+      <h3>¡Encuentra a los Brewers que se ajusten a tus gustos!</h2>
     </div>
-    <br>
-    <div class="text2">
+    <div class="text3">
+      <img src="img/_DSC0202.jpg" alt="foto2">
       <h2>¿Buscando gente a quien enseñarle tu cerveza?</h2>
-      <h2>¡Aqui te encontraran ellos primero!</h2>
+      <h3>¡Aqui te encontraran ellos primero!</h2>
     </div>
-    <br>
-    <div class= "text3">
-      <h2>algo</h2>
-      <h2>algo</h2>
+    <div class="text3">
+      <img src="img/_DSC00377.jpg" alt="fot3">
+      <h2>algo1</h2>
+      <h3>algo</h3>
     </div>
   </body>
 </div>
