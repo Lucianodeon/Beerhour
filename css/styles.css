@@ -102,14 +102,14 @@ header{
 	width: 350px;
 	background-color: white;
 	border-radius: 50%;
-	border: solid 25px black;
+	border: solid 15px black;
 	flex-direction: column;
 }
 
 
 .text3{
-	/*background: url(../img/_DSC00377.jpg);*/
-	background-repeat: no-repeat;
+	/*background: url(../img/memphis-mini-dark.png);*/
+	background-repeat: repeat;
 
 }
 .text3{
@@ -120,12 +120,19 @@ header{
 	position: relative;
 
 }
+
 .text3 h2{
+	text-transform: capitalize;
+	font-size: 65pt;
+	font-family: Lobster;
 	position: absolute;
 	bottom: 150px;
+
 }
 
 .text3 h3{
+	font-size: 35pt;
+	font-family: Chilanka;
 	position: absolute;
 	bottom: 0;
 }
@@ -191,4 +198,15 @@ header{
   padding: 8px 14px;
   border-radius: 10px;
 	cursor: pointer;
+}
+
+
+/*Pantalla de Tablets*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+
+}
+
+/*Pantalla de monitores*/
+@media only screen and (min-width : 1224px){
+
 }
