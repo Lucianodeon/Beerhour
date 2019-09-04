@@ -305,7 +305,6 @@ $paises=[
 
       </section>
     </main>
-	</div>
-	</body>
-
+  </body>
+</div>
 </html>
