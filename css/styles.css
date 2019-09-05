@@ -34,6 +34,9 @@ body{
 	font-weight: bold;
 	color: white;
 }
+.user{background-image: url(../img/bg-body.png);
+color: black;
+}
 /* Container */
 .container {
 	width: 100%;
@@ -44,6 +47,9 @@ body{
 	float:left;
 	margin-right: 30px;
   color: #fff;
+}
+.prof{
+	width: 50px;
 }
 
 .main-nav {
@@ -75,7 +81,9 @@ body{
 .main-nav li a:hover{
 	text-decoration: underline;
 }
-
+.main-nav img{
+	width: 50px;
+}
 .access{
 	float: right;
 }
@@ -98,7 +106,7 @@ header{
 .logform{
 	font-family: Lexend Deca;
 }
-
+/*Cuerpo*/
 .beerhour{
 	background-image: url(../img/memphis-mini-dark.png);
 	background-repeat: repeat;
@@ -198,7 +206,65 @@ font-size: 25pt;
 	padding: 3pt 25pt;
 	border-radius: 5px;
 }
+/*index logeado*/
+.usuar{
+	width: 100%;
+	display:flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
 
+	overflow: hidden;
+}
+
+.content{
+	max-width: 70vw;
+	padding: 0;
+	overflow: hidden;
+	text-align: center;
+	flex-direction: column;
+	margin: 0 auto;
+	margin-top: 15px;
+	border-radius: 3.5%;
+
+
+}
+.content-nav{
+	background: #fff;
+	width: 100%;
+	color: black;
+	width: 100%;
+	padding: 0;
+	float: left;
+	text-align: left;
+}
+.content-nav h2{
+	margin-left: 135px;
+	margin-top: 30px;
+}
+.content-nav img{
+	border-radius: 50%;
+	width: 100px;
+	float: left;
+}
+.content-img{
+	width: 100%;
+	padding: 0;
+	background: #fff;
+
+}
+.content-pie{
+	background: #fff;
+	width: 100%;
+	color: black;
+	padding: 0;
+	height: 100px;
+	text-align: left;
+
+}
+.content-pie h3{
+	margin: 0px;
+}
 /*Formularios*/
 
 .form-container {

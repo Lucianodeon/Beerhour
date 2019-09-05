@@ -29,7 +29,7 @@
       <h2>¿Sos mayorista?</h2>
       <h3>¡Este es tu lugar!</h3>
       <form class="botonhome" action="register.php" method="post">
-      <input class="button" type="submit" name="" value="¡Registrarse!">
+      <input class="botonhome" type="submit" name="" value="¡Registrarse!">
       </form>
     </div>
   </body>

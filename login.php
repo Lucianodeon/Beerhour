@@ -7,9 +7,9 @@
     <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
   </head>
-  <body>
+  <body class="regi">
     <?php include "nav.php" ?>
-    <main class="regi"> <!-- Cuerpo principal del sitio -->
+    <main class="logi"> <!-- Cuerpo principal del sitio -->
       <section class="form-container">
         <h1>Bienvenido</h1>
         <form class="access-form-log" action="" method="get">
@@ -32,9 +32,11 @@
           <p class="form-text alert-hide">
             La combinación ingresada de email y contraseña no es válida.
           </p>
-          <button class="botonlog" type="submit" name="send">Ingresar</button>
+          <button class="botonlog" type="submit" name="send">Ingresar</button><br><br><br><br>
+          <button type="button" class="botonlog"><img src="" alt=""><strong>Olvide mi Contraseña</strong></button>
         </form>
       </section>
     </main>
   </body>
+</div>
 </html>
