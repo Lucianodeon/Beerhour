@@ -82,7 +82,8 @@ body{
 
 .access li {
 	margin-right: 0;
-	margin-left: 15px;
+	margin-left: 5px;
+	margin-right: 10px;
   margin-top: 15px;
 }
 
@@ -104,17 +105,14 @@ header{
 	display:flex;
 	justify-content: center;
 	align-items: center;
-	height: 1000px;
 	flex-direction: column;
 	overflow: hidden;
+
 }
 
 .beerhour img{
-	display: flex;
-	flex-wrap:
-	position: absolute;
-	top: 40px;
-	width:250px;
+	width: 250px;
+	height: 250px;
 	background-color: white;
 	border-radius: 50%;
 	border: solid 15px black;
@@ -264,19 +262,30 @@ font-size: 25pt;
 }
 .text3 h2{font-size: 45pt;}
 .text3 h3{font-size: 35pt;}
-}
+
 .beerhour img{
 
 	width:325px;
+	height: 325px;
 	background-color: white;
 
 	border: solid 25px black;}
 	 .button{ font-size: 25px;}
-}
 
+.access li {
+	margin-right: 0;
+	margin-left: 15px;
+  margin-top: 15px;
+}
+}
 /*PC*/
 @media (min-width:1200px){
 
+	.access li {
+		margin-right: 0;
+		margin-left: 15px;
+	  margin-top: 15px;
+	}
 	.beerhour h1{
 		font-size: 80pt;
 	}
