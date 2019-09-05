@@ -30,10 +30,10 @@
       <img src="img/pp.jpg" alt="foto2"><h2>juancho-kpo</h2>
       </div>
       <div class="content-img">
-        <img src="img/alala.jpg" alt="foto2">
+        <img src="img/biru.jpeg" alt="foto2">
       </div>
       <div class="content-pie">
-        <h3>Aca tirando magia</h3>
+        <h3>ビールを飲みましょうか</h3>
       </div>
 
     </div>

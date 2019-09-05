@@ -218,13 +218,13 @@ font-size: 25pt;
 }
 
 .content{
-	max-width: 80vw;
+	max-width: 100vw;
 	padding: 0;
 	overflow: hidden;
 	text-align: center;
 	flex-direction: column;
-	margin: 0 auto;
 	margin-top: 15px;
+	margin: 0 auto;
 	border-radius: 3.5%;
 
 
@@ -251,6 +251,11 @@ font-size: 25pt;
 	width: 100%;
 	padding: 0;
 	background: #fff;
+
+}
+.content-img img{
+	width: 100%;
+	padding: 0;
 
 }
 .content-pie{
@@ -366,6 +371,11 @@ font-size: 25pt;
 	margin-left: 15px;
   margin-top: 15px;
 }
+.content{
+	max-width: 95vw;
+	margin: 0 auto;
+	margin-top: 15px;
+}
 }
 /*PC*/
 @media (min-width:1200px){
@@ -398,5 +408,11 @@ font-size: 25pt;
 
 	.button{
 		 font-size: 40px;
+	 }
+	 .content{
+	 	max-width: 90vw;
+		margin: 0 auto;
+		margin-top: 15px;
+
 	 }
 }
