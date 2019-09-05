@@ -14,7 +14,7 @@
     <h1>beer hour</h1>
     <h2>Don´t Worry Beer Happy</h2>
     </div>
-    <div class="text3">
+    <div class="text3" id="distinto">
       <img src="img/botellas-cerveza.png" alt="foto1r">
       <h2>¿Queres variedad?</h2>
       <h3>¡Encuentra a los Brewers que se ajusten a tus gustos!</h2>

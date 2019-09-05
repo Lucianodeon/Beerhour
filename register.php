@@ -240,6 +240,7 @@ $paises=[
     <title>BEER HOUR | REGISTRATE</title>
     <link rel="stylesheet" href="css/styles.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Anton|Chilanka|Lobster&display=swap" rel="stylesheet">
   </head>
   <body class="regi">
 
@@ -288,18 +289,24 @@ $paises=[
           <label for="fem">Femenino</label>
           <h3>Intereses</h3>
           <?php for ($i=0; $i <count($hobbies) ; $i++) {?>
-            <input type="checkbox" id="<?php $hobbies[$i]; ?>" name="hobbies" value="<?php $hobbies[$i]; ?>">
-            <label for="<?php $hobbies[$i]; ?>"><?php echo  $hobbies[$i]; ?></label>
+						<div class="hob">
+				  		<input type="checkbox" id="<?= $hobbies[$i]; ?>" name="hobbies" value="<?php $hobbies[$i]; ?>">
+            	<label for="<?= $hobbies[$i]; ?>"><?php echo  $hobbies[$i]; ?></label>
+						</div>
           <?php } ?>
 
 					<h3>Fecha de Nacimiento</h3>
+					<div class="regfinal">
 					<input type="date" name="fecha" min="1909-01-01"max="2002-01-01">
-
+					</div>
+					<div class="regfinal">
 					<input type="checkbox" id="tyc" name="tyc" value="yes" required>
           <label for="tyc">Acepto los términos y condiciones.</label>
-          <input type="submit" value="Registrarme">
-          <input type="reset" value="Cancelar">
-
+					</div>
+					<div class="regfinal">
+						<button type="submit"><strong>Registrarme</strong></button>
+						<button type="reset"><img src="" alt=""><strong>Cancelar</strong></button>
+					</div>
         </form>
 
       </section>
