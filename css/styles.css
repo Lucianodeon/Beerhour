@@ -15,7 +15,9 @@ li {
 body{
 	margin: 0 auto;
 }
-.logo{font-family:Chilanka;}
+.logo{
+	font-family:Chilanka;
+}
 
 .regi{
 	background-image: url(../img/wheat.png);
@@ -26,9 +28,7 @@ body{
 	background-color: white;
 	border-radius: 50%;
 	border: solid 1px black;
-
 }
-
 
 body{
 	font-weight: bold;
@@ -95,6 +95,10 @@ header{
 	z-index: 999;
 }
 
+.logform{
+	font-family: Lexend Deca;
+}
+
 .beerhour{
 	background-image: url(../img/memphis-mini-dark.png);
 	background-repeat: repeat;
@@ -107,7 +111,6 @@ header{
 	align-items: center;
 	flex-direction: column;
 	overflow: hidden;
-
 }
 
 .beerhour img{
@@ -167,7 +170,8 @@ font-size: 25pt;
 }
 
 #distinto h3{
-	bottom: 40px;}
+	bottom: 40px;
+}
 
 .text3 img{
 	width: 100%;
@@ -176,7 +180,6 @@ font-size: 25pt;
 .botonhome{
 	position: absolute;
 	bottom: 5px;
-
 }
 
 .button {
@@ -189,9 +192,12 @@ font-size: 25pt;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-
 }
 
+.botonlog{
+	padding: 3pt 25pt;
+	border-radius: 5px;
+}
 
 /*Formularios*/
 
@@ -203,14 +209,22 @@ font-size: 25pt;
 .form-container h1 {
 	text-align: center;
 	text-transform: uppercase;
+	font-family: Anton;
+	font-size: 40pt;
+
 }
 
 .registro {
 	margin-bottom: 20px;
 }
 
-.access-form {
+.access-form{
 	overflow: hidden;
+}
+
+.access-form-log {
+	overflow: hidden;
+	text-align: center;
 }
 
 .access-form label {
@@ -226,7 +240,7 @@ font-size: 25pt;
 }
 
 .remember-me {
-	text-align: right;
+	text-align: center;
 }
 
 .remember-me input {
@@ -250,7 +264,10 @@ font-size: 25pt;
   border-radius: 10px;
 	cursor: pointer;
 }
-.regfinal{position: relative 50%;}
+
+.regfinal{
+	position: relative 50%;
+}
 
 /*tablet*/
 @media(min-width:768px) and (max-width:1200px){
@@ -260,17 +277,23 @@ font-size: 25pt;
 .beerhour h2{
 	font-size: 35pt;
 }
-.text3 h2{font-size: 45pt;}
-.text3 h3{font-size: 35pt;}
+.text3 h2{
+	font-size: 45pt;
+}
+.text3 h3{
+	font-size: 35pt;
+}
 
 .beerhour img{
 
 	width:325px;
 	height: 325px;
 	background-color: white;
-
-	border: solid 25px black;}
-	 .button{ font-size: 25px;}
+	border: solid 25px black;
+}
+	 .button{
+		 font-size: 25px;
+}
 
 .access li {
 	margin-right: 0;
@@ -286,16 +309,28 @@ font-size: 25pt;
 		margin-left: 15px;
 	  margin-top: 15px;
 	}
+
 	.beerhour h1{
 		font-size: 80pt;
 	}
+
 	.beerhour h2{
 		font-size: 60pt;
 	}
-	.text3 h2{font-size: 60pt;}
-	.text3 h3{font-size: 50pt;}
+
+	.text3 h2{
+		font-size: 60pt;
+	}
+
+	.text3 h3{
+		font-size: 50pt;
+	}
 
 		#distinto h3{
-			bottom: 60px;}
-			 .button{ font-size: 40px;}
+			bottom: 60px;
+		}
+
+	.button{
+		 font-size: 40px;
+	 }
 }
