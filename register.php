@@ -228,8 +228,7 @@ $paises=[
     "Tomar Birra",
     "Vender Cerveza Artesanal",
     "Vender Insumos",
-    "Soy un Bar",
-    "otros"
+    "Soy un Bar"
 
   ];
 	?>
