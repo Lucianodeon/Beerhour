@@ -231,6 +231,40 @@ $paises=[
     "Soy un Bar"
 
   ];
+
+	$nombre = "";
+	$email = "";
+	$password = "";
+
+	if ($_POST) {
+
+		$nombresintrim = $_POST["nombre"];
+		$email = $_POST["email"];
+		$password = $_POST["password"];
+
+		$nombre = trim($nombresintrim);
+
+		if (strlen($_POST["nombre"])==0) {
+			echo "Por favor llene este campo con su nombre <br>";
+		}
+		if (strlen($_POST["nombre"])<5) {
+			echo "El nombre debe tener al menos 5 caracteres <br>";
+		}
+		if (strlen($_POST["email"])==0) {
+			echo "Por favor llene este campo con su email <br>";
+		}
+		if (filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)==false) {
+			echo "El email no tiene el formato correcto <br>";
+		}
+		if (strlen($_POST["password"])==0) {
+			echo "Por favor llene este campo con su contraseña <br>";
+		}
+		if (strlen($_POST["password"])<5) {
+			echo "La contraseña debe tener al menos 5 caracteres <br>";
+		}
+
+	}
+
 	?>
 
 <!DOCTYPE html>
@@ -251,18 +285,18 @@ $paises=[
         <form class="access-form" action="" method="post">
           <div class="registro">
             <label for="nombre">Nombre*</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Ingresá tu nombre" required>
+            <input type="text" id="nombre" name="nombre" value= "<?=$nombre?>" placeholder="Ingresá tu nombre" required>
 
           </div>
           <div class="registro">
             <label for="email">Email*</label>
-            <input type="email" id="email" name="email" placeholder="Ingresá tu Correo Electronico" required>
+            <input type="email" id="email" name="email" value= "<?=$email?>" placeholder="Ingresá tu Correo Electronico" required>
 
 
           </div>
           <div class="registro">
             <label for="password">Contraseña*</label>
-            <input type="password" id="passsword" name="password" placeholder="Contraseña" value="" required>
+            <input type="password" id="passsword" name="password" value= "<?=$password?>" placeholder="Contraseña" value="" required>
 
           </div>
           <h3 for="pais">Nacionalidad*</h3>
