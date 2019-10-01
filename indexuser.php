@@ -35,8 +35,8 @@
       <div class="content-pie">
         <h3>ビールを飲みましょうか</h3>
       </div>
-
     </div>
+      
     </main>
   </body>
   </div>

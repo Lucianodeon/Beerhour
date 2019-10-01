@@ -1,4 +1,56 @@
 <?php
+// include "funciones.php";
+include "init.php";
+
+if($auth->usuarioLogueado()){
+  header("Location:indexuser.php");
+  exit;
+}
+
+$errores = [];
+$nombreOk = "";
+$emailOk = "";
+
+//si el formulario viene por POST;
+
+if($_POST){
+
+  //tenemos que detectar errores y mostrarlos al usuario.
+  // $errores = validarRegistro($_POST);
+  $errores = Validador::validarRegistro($_POST);
+  // var_dump($errores);
+
+  $nombreOk = trim($_POST["nombre"]);
+  $emailOk = trim($_POST["email"]);
+
+  // Opcional crear if para cada asignación de datos correctos. Solo necesitamos colocar la cariable en el value.
+  // if(!isset($errores["email"])){
+  //   $emailOk = $_POST["email"];
+  // }
+
+  //Si no hay errores;
+  if(!$errores){
+    // Crear un usuario
+    //$usuario = armarUsuario();
+    $usuario = new Usuario($_POST);
+
+    //Guardarlo en alguna parte
+    //guardarUsuario($usuario);
+    $json->guardarUsuario($usuario, $file);
+
+    //Subir la imagen de perfil
+
+    //Auto Loguear usuario (Opcional);
+
+    //Redirigirlo a página Exito;
+    header("Location:index.php");
+    exit;
+    }
+}
+
+
+?>
+<?php
 $paises=[
 		"Afghanistan",
 		"Albania",
@@ -288,6 +340,11 @@ $paises=[
             <input type="text" id="nombre" name="nombre" value= "<?=$nombre?>" placeholder="Ingresá tu nombre" required>
 
           </div>
+					<div class="registro">
+						<label for="Apellido">Apellido*</label>
+						<input type="text" id="apellido" name="apellido" placeholder="Ingresá tu Apellido" required>
+
+					</div>
           <div class="registro">
             <label for="email">Email*</label>
             <input type="email" id="email" name="email" value= "<?=$email?>" placeholder="Ingresá tu Correo Electronico" required>
@@ -299,6 +356,11 @@ $paises=[
             <input type="password" id="passsword" name="password" value= "<?=$password?>" placeholder="Contraseña" value="" required>
 
           </div>
+					<div class="registro">
+						<label for="password">Reingresa tu Contraseña*</label>
+						<input type="password" id="repass" name="repass" placeholder="Reingresa la contraseña" value="" required>
+
+					</div>
           <h3 for="pais">Nacionalidad*</h3>
 
           <select  name="pais" required="">

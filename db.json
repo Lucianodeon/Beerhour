@@ -1,0 +1,22 @@
+{
+    "usuarios": [
+        {
+            "id": 1,
+            "nombre": "lalala",
+            "email": "lala@lala.com",
+            "password": "$2y$10$euvB2ICkFqz5UMBoQNiwkOM3xsQZs2V1r2vnjm9tK4Sv56o84P\/Ne"
+        },
+        {
+            "id": 2,
+            "nombre": "juacho",
+            "email": "juancho-kpo@yahoo.com",
+            "password": "$2y$10$D3L\/MhV6CLxJnk6X8O3Opu9ZrsZUElR\/dLOgJ4VxBZ7w\/vDbv1KiO"
+        },
+        {
+            "id": 3,
+            "nombre": "mati",
+            "email": "mati@mati.com",
+            "password": "$2y$10$sf5XcJuBuSqYmzytmJ6C6.eVdja9eaTJiACcK0K7i\/z1TOUSotYze"
+        }
+    ]
+}

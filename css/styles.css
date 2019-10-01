@@ -86,6 +86,7 @@ color: black;
 }
 .access{
 	float: right;
+
 }
 
 .access li {
@@ -200,6 +201,12 @@ font-size: 25pt;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+}
+.botonreg{
+text-align: center;
+border-radius: 5px;
+padding: 3px 15px;
+
 }
 
 .botonlog{
@@ -339,6 +346,9 @@ font-size: 25pt;
 .regfinal{
 	position: relative 50%;
 }
+@media only screen and (max-width: 768px) {
+.b{display: none;}
+}
 
 /*tablet*/
 @media(min-width:768px) and (max-width:1200px){
@@ -376,7 +386,10 @@ font-size: 25pt;
 	margin: 0 auto;
 	margin-top: 15px;
 }
+.b{display: unset ;}
+.a{display: none;}
 }
+/*.registrar{display: none;}*/
 /*PC*/
 @media (min-width:1200px){
 
@@ -385,7 +398,7 @@ font-size: 25pt;
 		margin-left: 15px;
 	  margin-top: 15px;
 	}
-
+.a{display: none;}
 	.beerhour h1{
 		font-size: 80pt;
 	}
@@ -415,4 +428,5 @@ font-size: 25pt;
 		margin-top: 15px;
 
 	 }
+	 /*.registrar{display: none;}*/
 }

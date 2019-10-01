@@ -1,3 +1,31 @@
+<?php
+// include "funciones.php";
+include "init.php";
+
+if($auth->usuarioLogueado()){
+  header("Location:indexuser.php");
+  exit;
+}
+$errores = [];
+
+if($_POST){
+
+  // $errores = validarLogin($_POST);
+  $errores = Validador::validarLogin($_POST);
+  var_dump($errores);
+
+  if(!$errores){
+    $auth->loguearUsuario();
+      header("Location:index.php");
+      exit;
+  }
+
+}
+
+
+
+
+?>
 
 <html lang="en" dir="ltr">
   <head>
@@ -12,7 +40,7 @@
     <main class="logi"> <!-- Cuerpo principal del sitio -->
       <section class="form-container">
         <h1>Bienvenido</h1>
-        <form class="access-form-log" action="" method="get">
+        <form class="access-form-log" action="" method="post">
           <div class="field-group">
             <label class=logform for="email">Email</label>
             <br>
@@ -32,9 +60,15 @@
           <p class="form-text alert-hide">
             La combinación ingresada de email y contraseña no es válida.
           </p>
-          <button class="botonlog" type="submit" name="send">Ingresar</button><br><br><br><br>
+          <button class="botonlog" type="submit" name="send">Ingresar</button><br><br>
           <button type="button" class="botonlog"><img src="" alt=""><strong>Olvide mi Contraseña</strong></button>
-        </form>
+            </form>
+            <h3 class="botonreg">¿Primera vez?</h3>
+            <form class="botonreg" action="register.php" method="post">
+            <input class="botonreg" type="submit" name="" value="¡REGISTRATE!">
+            </form>
+
+
       </section>
     </main>
   </body>

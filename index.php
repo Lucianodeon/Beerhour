@@ -1,3 +1,31 @@
+<?php
+// include "funciones.php";
+include "init.php";
+
+if($auth->usuarioLogueado()){
+  header("Location:indexuser.php");
+  exit;
+}
+$errores = [];
+
+if($_POST){
+
+  // $errores = validarLogin($_POST);
+  $errores = Validador::validarLogin($_POST);
+  var_dump($errores);
+
+  if(!$errores){
+    $auth->loguearUsuario();
+      header("Location:index.php");
+      exit;
+  }
+
+}
+
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
