@@ -20,9 +20,15 @@
         },
         {
             "id": 4,
+<<<<<<< Updated upstream
             "nombre": "as",
             "email": "matiassoubelet@gmail.com",
             "password": "$2y$10$Atpkdxktxc7EKWx1MuYeT.PkbbRdhZljrhgrKYZldJiswyNeCGeT2"
+=======
+            "nombre": "dario",
+            "email": "dario@palomar.com",
+            "password": "$2y$10$JRem2pGQTiLOp2Vrs.qEqeBexa1.kv04ADD1yMEZM9\/GCkCT7vZjG"
+>>>>>>> Stashed changes
         }
     ]
 }

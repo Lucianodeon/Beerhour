@@ -1,5 +1,5 @@
 <?php
-// include "funciones.php";
+
 include "init.php";
 
 if($auth->usuarioLogueado()){
