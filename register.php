@@ -302,24 +302,24 @@ $paises=[
 		$nombre = trim($nombresintrim);
     $apellido = trim($apellidosintrim);
 
-		if (strlen($_POST["nombre"])==0) {
-			echo "Por favor llene este campo con su nombre <br>";
-		}
-		if (strlen($_POST["nombre"])<5) {
-			echo "El nombre debe tener al menos 5 caracteres <br>";
-		}
-		if (strlen($_POST["email"])==0) {
-			echo "Por favor llene este campo con su email <br>";
-		}
-		if (filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)==false) {
-			echo "El email no tiene el formato correcto <br>";
-		}
-		if (strlen($_POST["password"])==0) {
-			echo "Por favor llene este campo con su contraseña <br>";
-		}
-		if (strlen($_POST["password"])<5) {
-			echo "La contraseña debe tener al menos 5 caracteres <br>";
-		}
+	//	if (strlen($_POST["nombre"])==0) {
+	//		echo "Por favor llene este campo con su nombre <br>";
+	//	}
+	//	if (strlen($_POST["nombre"])<5) {
+	//		echo "El nombre debe tener al menos 5 caracteres <br>";
+	//	}
+	//	if (strlen($_POST["email"])==0) {
+	//		echo "Por favor llene este campo con su email <br>";
+	//	}
+	//	if (filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)==false) {
+	//		echo "El email no tiene el formato correcto <br>";
+	//	}
+	//	if (strlen($_POST["password"])==0) {
+	//		echo "Por favor llene este campo con su contraseña <br>";
+	//	}
+	//	if (strlen($_POST["password"])<5) {
+	//		echo "La contraseña debe tener al menos 5 caracteres <br>";
+	//	}
 
 	}
 

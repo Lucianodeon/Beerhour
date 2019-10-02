@@ -28,8 +28,12 @@ class DbJson extends Db
     $usuario = [
       "id" => $user->getId(),
       "nombre" => $user->getNombre(),
+      "apellido" => $user->getApellido(),
       "email" => $user->getEmail(),
       "password" =>$user->getPassword(),
+      "pais" =>$user->getPais(),
+      "provincia" =>$user->getProvincia(),
+      "genero" =>$user->getGenero(),
     ];
 
     $array["usuarios"][] = $usuario;

@@ -23,6 +23,23 @@
             "nombre": "as",
             "email": "matiassoubelet@gmail.com",
             "password": "$2y$10$Atpkdxktxc7EKWx1MuYeT.PkbbRdhZljrhgrKYZldJiswyNeCGeT2"
+        },
+        {
+            "id": 5,
+            "nombre": "Nicolas",
+            "apellido": "Bruzzo",
+            "email": "nicobruzzo@gmail.com",
+            "password": "$2y$10$SY3hGOVQ9y7dzlF3tvSKQebb0rzJWKbXpnU0o3rPmoNgUO23Udnbm"
+        },
+        {
+            "id": 6,
+            "nombre": "Juan",
+            "apellido": "Amigo",
+            "email": "juanamigo@gmail.com",
+            "password": "$2y$10$K4lsAhQIgHtubymQz2Pk3.V9mawBVdn6GBkaLWsTta6iAIoEWMe\/i",
+            "pais": "",
+            "provincia": "",
+            "genero": "m"
         }
     ]
 }
