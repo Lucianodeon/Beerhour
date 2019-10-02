@@ -40,6 +40,16 @@
             "pais": "",
             "provincia": "",
             "genero": "m"
+        },
+        {
+            "id": 7,
+            "nombre": "ahmed",
+            "apellido": "jaban",
+            "email": "ahmed@gmail.com",
+            "password": "$2y$10$WELMfCebdiaa88IvF65afOq.Vrc.fxcvgLeopjpksA2JZNExTFKbu",
+            "pais": "",
+            "provincia": "",
+            "genero": "m"
         }
     ]
 }

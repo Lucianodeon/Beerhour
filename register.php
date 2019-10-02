@@ -23,19 +23,16 @@ if($_POST){
   $nombreOk = trim($_POST["nombre"]);
   $emailOk = trim($_POST["email"]);
 
-  // Opcional crear if para cada asignación de datos correctos. Solo necesitamos colocar la cariable en el value.
-  // if(!isset($errores["email"])){
-  //   $emailOk = $_POST["email"];
-  // }
+
 
   //Si no hay errores;
   if(!$errores){
     // Crear un usuario
-    //$usuario = armarUsuario();
+
     $usuario = new Usuario($_POST);
 
     //Guardarlo en alguna parte
-    //guardarUsuario($usuario);
+
     $json->guardarUsuario($usuario, $file);
 
     //Subir la imagen de perfil
@@ -289,6 +286,7 @@ $paises=[
 	$email = "";
 	$password = "";
   $repass = "";
+  $fecha="";
 
 
 	if ($_POST) {
