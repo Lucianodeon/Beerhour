@@ -1,5 +1,5 @@
 <?php
-// include "funciones.php";
+
 include "init.php";
 
 if($auth->usuarioLogueado()){
@@ -42,7 +42,7 @@ if($_POST){
 
     //Auto Loguear usuario (Opcional);
 
-    //Redirigirlo a página Exito;
+
     header("Location:index.php");
     exit;
     }
@@ -298,7 +298,8 @@ $paises=[
 		$email = $_POST["email"];
 		$password = $_POST["password"];
     $repass = $_POST["repass"];
-
+    $fecha=$_POST["fecha"];
+    $avatar=$_POST["avatar"];
 		$nombre = trim($nombresintrim);
     $apellido = trim($apellidosintrim);
 
@@ -352,7 +353,7 @@ $paises=[
           </div>
 					<div class="registro">
 						<label for="apellido">Apellido*</label>
-						<input type="text" id="apellido" name="apellido" vlaue= "<?=$apellido?>" placeholder="Ingresá tu Apellido" required>
+						<input type="text" id="apellido" name="apellido" value= "<?=$apellido?>" placeholder="Ingresá tu Apellido" required>
             <small class="form-text text-danger">
               <?php if(isset($errores["apellido"] )): ?>
                 <?= $errores["apellido"]  ?>
@@ -390,14 +391,17 @@ $paises=[
           <h3 for="pais">Nacionalidad*</h3>
 
           <select  name="pais" required="">
+
           <option value="" selected="">Por favor, elija una opción</option>
+          <option value="checked"></option>
           <?php for ($i=0; $i <count($paises) ; $i++) {?>
             <option value="<?php $paises[$i];  ?>"><?php echo $paises[$i]?></option>
         <?php    } ?>
           </select>
 					<h3>Domicilio*</h3>
 					<select name="provincia" required="">
-					<option value="" selected="">Por favor, elija una opción</option>
+          <option value="" selected="">Por favor, elija una opción</option>
+          <option value="checked"></option>
 					<?php for ($i=0; $i <count($provincias) ; $i++) {?>
             <option value="<?php $provincias[$i];  ?>"><?php echo $provincias[$i]?></option>
         	<?php    } ?>
@@ -419,11 +423,11 @@ $paises=[
 
 					<h3>Fecha de Nacimiento</h3>
 					<div class="regfinal">
-					<input type="date" name="fecha" min="1909-01-01"max="2002-01-01">
+					<input type="date" name="fecha" min="1909-01-01"max="2002-01-01" value="<?=$fecha?>">
 					</div>
           <div class="regfinal">
           <label for="avatar">Imagen de perfil</label><br>
-          <input type="file" id="avatar" class="form-control" name="avatar">
+          <input type="file" id="avatar" class="form-control" name="avatar" value="<?=$avatar?>">
           <span class="small text-danger"></span>
 
         </div>
