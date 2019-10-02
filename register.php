@@ -421,6 +421,12 @@ $paises=[
 					<div class="regfinal">
 					<input type="date" name="fecha" min="1909-01-01"max="2002-01-01">
 					</div>
+          <div class="regfinal">
+          <label for="avatar">Imagen de perfil</label><br>
+          <input type="file" id="avatar" class="form-control" name="avatar">
+          <span class="small text-danger"></span>
+
+        </div>
 					<div class="regfinal">
 					<input type="checkbox" id="tyc" name="tyc" value="yes" required>
           <label for="tyc">Acepto los términos y condiciones.</label>

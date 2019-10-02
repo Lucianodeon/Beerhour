@@ -1,3 +1,11 @@
+<?php
+include "init.php";
+ if($auth->usuarioLogueado()==null){
+  header("Location:login.php");
+  exit;
+
+}
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -36,7 +44,7 @@
         <h3>ビールを飲みましょうか</h3>
       </div>
     </div>
-      
+
     </main>
   </body>
   </div>
