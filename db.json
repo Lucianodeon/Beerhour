@@ -17,6 +17,12 @@
             "nombre": "mati",
             "email": "mati@mati.com",
             "password": "$2y$10$sf5XcJuBuSqYmzytmJ6C6.eVdja9eaTJiACcK0K7i\/z1TOUSotYze"
+        },
+        {
+            "id": 4,
+            "nombre": "as",
+            "email": "matiassoubelet@gmail.com",
+            "password": "$2y$10$Atpkdxktxc7EKWx1MuYeT.PkbbRdhZljrhgrKYZldJiswyNeCGeT2"
         }
     ]
 }

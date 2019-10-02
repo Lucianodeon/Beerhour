@@ -285,16 +285,22 @@ $paises=[
   ];
 
 	$nombre = "";
+  $apellido = "";
 	$email = "";
 	$password = "";
+  $repass = "";
+
 
 	if ($_POST) {
 
 		$nombresintrim = $_POST["nombre"];
+    $apellidosintrim = $_POST["apellido"];
 		$email = $_POST["email"];
 		$password = $_POST["password"];
+    $repass = $_POST["repass"];
 
 		$nombre = trim($nombresintrim);
+    $apellido = trim($apellidosintrim);
 
 		if (strlen($_POST["nombre"])==0) {
 			echo "Por favor llene este campo con su nombre <br>";
@@ -338,28 +344,48 @@ $paises=[
           <div class="registro">
             <label for="nombre">Nombre*</label>
             <input type="text" id="nombre" name="nombre" value= "<?=$nombre?>" placeholder="Ingresá tu nombre" required>
-
+            <small class="form-text text-danger">
+              <?php if(isset($errores["nombre"] )): ?>
+                <?= $errores["nombre"]  ?>
+              <?php endif ?>
+             </small>
           </div>
 					<div class="registro">
-						<label for="Apellido">Apellido*</label>
-						<input type="text" id="apellido" name="apellido" placeholder="Ingresá tu Apellido" required>
-
+						<label for="apellido">Apellido*</label>
+						<input type="text" id="apellido" name="apellido" vlaue= "<?=$apellido?>" placeholder="Ingresá tu Apellido" required>
+            <small class="form-text text-danger">
+              <?php if(isset($errores["apellido"] )): ?>
+                <?= $errores["apellido"]  ?>
+              <?php endif ?>
+             </small>
 					</div>
           <div class="registro">
             <label for="email">Email*</label>
             <input type="email" id="email" name="email" value= "<?=$email?>" placeholder="Ingresá tu Correo Electronico" required>
-
+            <small class="form-text text-danger">
+              <?php if(isset($errores["email"] )): ?>
+                <?= $errores["email"]  ?>
+              <?php endif ?>
+             </small>
 
           </div>
           <div class="registro">
             <label for="password">Contraseña*</label>
             <input type="password" id="passsword" name="password" value= "<?=$password?>" placeholder="Contraseña" value="" required>
-
+            <small class="form-text text-danger">
+              <?php if(isset($errores["password"] )): ?>
+                <?= $errores["password"]  ?>
+              <?php endif ?>
+             </small>
           </div>
 					<div class="registro">
 						<label for="password">Reingresa tu Contraseña*</label>
-						<input type="password" id="repass" name="repass" placeholder="Reingresa la contraseña" value="" required>
-
+						<input type="password" id="repass" name="repass" value = "<?=$repass?>" placeholder="Reingresa la contraseña" value="" required>
+            <small class="form-text text-danger">
+              <?php if(isset($errores["repass"] )): ?>
+                <?= $errores["repass"]  ?>
+              <?php endif ?>
+             </small>
 					</div>
           <h3 for="pais">Nacionalidad*</h3>
 
@@ -398,6 +424,11 @@ $paises=[
 					<div class="regfinal">
 					<input type="checkbox" id="tyc" name="tyc" value="yes" required>
           <label for="tyc">Acepto los términos y condiciones.</label>
+          <small class="form-text text-danger">
+            <?php if(isset($errores["tyc"] )): ?>
+              <?= $errores["tyc"]  ?>
+            <?php endif ?>
+           </small>
 					</div>
 					<div class="regfinal">
 						<button type="submit"><strong>Registrarme</strong></button>

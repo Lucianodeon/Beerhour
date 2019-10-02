@@ -28,6 +28,13 @@ class Validador
       $errores["nombre"] = "Por favor ingrese caracteres alfabéticos";
     } //Validar con expresion regular que permita espacios intermedios.
 
+    //Apellido
+    if(strlen($datosFinales["apellido"]) == 0){
+      $errores["apellido"] = "El campo nombre debe estar completo";
+    } else if (!ctype_alpha($datosFinales["apellido"])){
+      $errores["apellido"] = "Por favor ingrese caracteres alfabéticos";
+    }
+
     //Email
     if(strlen($datosFinales["email"]) == 0){
       $errores["email"] = "El campo email debe estar completo";
