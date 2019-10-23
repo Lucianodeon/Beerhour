@@ -36,8 +36,10 @@ if($_POST){
     $json->guardarUsuario($usuario, $file);
 
     //Subir la imagen de perfil
-
+    $ext = pathinfo($_FILES["avatar"]['name'], PATHINFO_EXTENSION);
+    move_uploaded_file($_FILES["avatar"]['tmp_name'], "avatar/".$_POST['email']. "." . $ext );
     //Auto Loguear usuario (Opcional);
+    $auth->loguearUsuario($_POST['email']);
 
 
     header("Location:index.php");

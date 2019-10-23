@@ -50,6 +50,26 @@
             "pais": "",
             "provincia": "",
             "genero": "m"
+        },
+        {
+            "id": 8,
+            "nombre": "tuvieja",
+            "apellido": "vieja",
+            "email": "tuvieja@a.com",
+            "password": "$2y$10$HEm0ERuvoxHpWL07k8TauOB\/kKqqZMFDT7yTg84oruUd8s5NuTaMS",
+            "pais": "",
+            "provincia": "",
+            "genero": null
+        },
+        {
+            "id": 9,
+            "nombre": "dario",
+            "apellido": "kpo",
+            "email": "lala@yahoo.com",
+            "password": "$2y$10$wbtjus1RwzYqvX7VzqEj7.tc2Gtnq1\/mdj68E\/3FiM0m4F4CKoCdm",
+            "pais": "",
+            "provincia": "",
+            "genero": "m"
         }
     ]
 }

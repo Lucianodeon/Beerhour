@@ -1,7 +1,9 @@
 <?php
 // include "funciones.php";
 include "init.php";
-
+if(isset($_COOKIE['email'])){
+  $auth->loguearUsuario($_COOKIE['email']);
+}
 if($auth->usuarioLogueado()){
   header("Location:indexuser.php");
   exit;
@@ -12,7 +14,7 @@ if($_POST){
 
   // $errores = validarLogin($_POST);
   $errores = Validador::validarLogin($_POST);
-  var_dump($errores);
+  //var_dump($errores);
 
   if(!$errores){
     $auth->loguearUsuario();

@@ -3,7 +3,7 @@
 /**
  *
  */
-include "db.php";
+
 
 class DbJson extends Db
 {
@@ -14,7 +14,8 @@ class DbJson extends Db
   function __construct(string $file)
   {
     if(!file_exists($file)){
-      $this->json = "";
+      $data = ['usuarios'=>[]]; // En caso de que el archivo no exista vamos a encodear al formato incial del .json para que no rompa el login.
+      $this->json = json_encode($data);
     } else {
       $this->json = file_get_contents($file);
     }

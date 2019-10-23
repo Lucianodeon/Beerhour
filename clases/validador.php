@@ -19,7 +19,7 @@ class Validador
     }
 
     //Validaciones
-    //=====================
+
 
     //Nombre
     if(strlen($datosFinales["nombre"]) == 0){
@@ -55,6 +55,16 @@ class Validador
     } else if($datosFinales["password"] !== $datosFinales["repass"]){
       $errores["repass"] = "Las contraseñas no coiniceden";
     }
+    if(strlen($_FILES['avatar']['nombre']) == 0){
+      $errores['avatar'] = "Por favor suba una imagen de perfil.";
+    } else {
+      $ext = pathinfo($_FILES["avatar"]['nombre'], PATHINFO_EXTENSION);
+
+      if($ext !== "jpg" && $ext !== "png" && $ext !== "jpeg"){
+        $errores['avatar'] = "El archivo debe ser una imagen de tipo .jpg, .jpeg, .png";
+      }
+    }
+
 
     return $errores;
   }
@@ -75,11 +85,12 @@ class Validador
     //Password
     if(strlen($datos["password"]) == 0){
       $errores["password"] = "El campo password debe estar completo";
-    } else {
-      $usuario = $json->buscarUsuarioPorMail($datos["email"]);
-      if( !password_verify($datos["password"], $usuario->getPassword()) ){
-      $errores["password"] = "La contraseña ingresada es incorrecta";
-      }
+    } else if($json->buscarUsuarioPorMail($datos["email"])){
+        $usuario = $json->buscarUsuarioPorMail($datos["email"]);
+
+        if( !password_verify($datos["password"], $usuario->getPassword()) ){
+          $errores["password"] = "La contraseña ingresada es incorrecta";
+        }
     }
 
     return $errores;
