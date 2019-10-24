@@ -1,5 +1,5 @@
 <?php
-include 'db.php';
+include 'clases/db.php';
 include "clases/dbjson.php";
 include "clases/dbmysql.php";
 include "clases/validador.php";
@@ -10,5 +10,5 @@ $auth = new Auth;
 // var_dump($auth);
 
 $file = "db.json";
-$json = new DbJson($file);
+$db = new DbJson($file);
 ?>

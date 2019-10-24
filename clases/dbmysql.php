@@ -4,7 +4,7 @@ class dbMysql extends db
 {
   private $db;
 
-  function __construct(argument)
+  function __construct()
   {  $dsn='mysql;host=localhost;dbname=movies_db;3306';
       $username='root';
       $password='root';
@@ -21,17 +21,37 @@ class dbMysql extends db
   }
   public function guardarUsuario(Usuario $usuario,string $file=null){
     $stmt=$this->$db->prepare("INSERT INTO usuarios VALUES(DEFAULT,:nombre,:apellido,:email,:password,:pais,:provincia,:genero,:nac)");
-    $stmt=->bindValue(":nombre",$user->getNombre());
-    $stmt=->bindValue(":apellido",$user->getApellido());
-    $stmt=->bindValue(":email",$user->getEmail());
-    $stmt=->bindValue(":pais",$user->getPais());
-    $stmt=->bindValue(":provincia",$user->getProvincia());
-    $stmt=->bindValue(":provincia",$user->getGenero());
+    $stmt->bindValue(":nombre",$user->getNombre());
+    $stmt->bindValue(":apellido",$user->getApellido());
+    $stmt->bindValue(":email",$user->getEmail());
+    $stmt->bindValue(":pais",$user->getPais());
+    $stmt->bindValue(":provincia",$user->getProvincia());
+    $stmt->bindValue(":provincia",$user->getGenero());
     $stmt->execute();
 
   }
   public function buscarUsuarioPorMail(string $email){
+    $stmt = $this->dbMysql->prepare("SELECT * FROM usuarios WHERE email = :email");
+
+    $stmt->bindValue(":email", $email);
+    $stmt->execute();
+
+    $usuarioArray = $stmt->fetch(PDO::FETCH_ASSOC);
+    if($usuarioArray){
+        $usuario = new Usuario($usuarioArray);
+    } else {
+      $usuario = null;
+    }
+    return $usuario;
 
   }
+
+
+
+
+
+
+
+
 }
  ?>
