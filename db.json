@@ -70,6 +70,16 @@
             "pais": "",
             "provincia": "",
             "genero": "m"
+        },
+        {
+            "id": 10,
+            "nombre": "juanpe",
+            "apellido": "lalalala",
+            "email": "12345@12345.com",
+            "password": "$2y$10$HDlqPrK0znknb5DJ0OU7Q.FV0LM3\/dHK6tDC146KGyFxE2PHRbRoK",
+            "pais": "",
+            "provincia": "",
+            "genero": "m"
         }
     ]
 }

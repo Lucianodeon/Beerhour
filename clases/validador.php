@@ -55,10 +55,11 @@ class Validador
     } else if($datosFinales["password"] !== $datosFinales["repass"]){
       $errores["repass"] = "Las contraseñas no coiniceden";
     }
-    if(strlen($_FILES['avatar']['nombre']) == 0){
+    //avatar
+    if(strlen($_FILES['avatar']['name']) == 0){
       $errores['avatar'] = "Por favor suba una imagen de perfil.";
     } else {
-      $ext = pathinfo($_FILES["avatar"]['nombre'], PATHINFO_EXTENSION);
+      $ext = pathinfo($_FILES["avatar"]['name'], PATHINFO_EXTENSION);
 
       if($ext !== "jpg" && $ext !== "png" && $ext !== "jpeg"){
         $errores['avatar'] = "El archivo debe ser una imagen de tipo .jpg, .jpeg, .png";

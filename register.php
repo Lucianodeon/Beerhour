@@ -15,6 +15,7 @@ $emailOk = "";
 
 if($_POST){
 
+
   //tenemos que detectar errores y mostrarlos al usuario.
   // $errores = validarRegistro($_POST);
   $errores = Validador::validarRegistro($_POST);
@@ -33,7 +34,7 @@ if($_POST){
 
     //Guardarlo en alguna parte
 
-    $json->guardarUsuario($usuario, $file);
+    $db->guardarUsuario($usuario, $file);
 
     //Subir la imagen de perfil
     $ext = pathinfo($_FILES["avatar"]['name'], PATHINFO_EXTENSION);
@@ -299,7 +300,7 @@ $paises=[
 		$password = $_POST["password"];
     $repass = $_POST["repass"];
     $fecha=$_POST["fecha"];
-    $avatar=$_POST["avatar"];
+
 		$nombre = trim($nombresintrim);
     $apellido = trim($apellidosintrim);
 
@@ -341,7 +342,7 @@ $paises=[
     <main>
       <section class="form-container">
         <h1>Registrate</h1>
-        <form class="access-form" action="" method="post">
+        <form class="access-form" action="" method="post" enctype="multipart/form-data">
           <div class="registro">
             <label for="nombre">Nombre*</label>
             <input type="text" id="nombre" name="nombre" value= "<?=$nombre?>" placeholder="Ingresá tu nombre" required>
